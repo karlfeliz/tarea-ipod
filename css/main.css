@@ -1,0 +1,77 @@
+.card {
+  width: 500px;
+  background-color: black;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  margin: 20px;
+  overflow: hidden;
+}
+.card__header {
+  display: grid;
+  justify-items: center;
+  padding: 20px;
+}
+.card__title {
+  margin: 0;
+  color: white;
+  font-size: 30px;
+}
+.card__img {
+  width: 35%;
+  margin: 20px;
+}
+.card__body {
+  padding: 20px;
+}
+.card__subtitle {
+  color: white;
+  font-weight: lighter;
+  margin: 20px 0;
+  font-size: 30px;
+}
+.card__copy {
+  color: gray;
+  font-weight: lighter;
+}
+.card__footer {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card__button {
+  color: white;
+  background-color: black;
+  border: 1px solid white;
+  padding: 15px;
+  font-size: 14px;
+}
+.card__button:hover {
+  background-color: white;
+  color: black;
+}
+.card--reverse {
+  background-color: white;
+}
+.card--reverse .card__title, .card--reverse .card__subtitle {
+  color: black;
+}
+.card--reverse .card__button {
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+}
+.card--reverse .card__button:hover {
+  background-color: black;
+  color: white;
+}
+
+body {
+  background-color: white;
+  padding: 20px;
+  font-family: monospace;
+  font-weight: lighter;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=main.css.map */

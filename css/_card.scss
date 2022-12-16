@@ -1,0 +1,80 @@
+.card{
+    width: 500px;
+    background-color: $secondary-color;
+    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.3);
+    border-radius: 15px;
+    margin: $spacing;
+    overflow: hidden;
+
+    &__header{
+        @include middle;
+        padding: $spacing;
+    }
+
+    &__title{
+        margin: 0;
+        color: $primary-color;
+        font-size: 30px;
+        
+    }
+
+    &__img{
+        width: 35%;
+        margin: $spacing;
+    }
+
+    &__body{
+        padding: $spacing;
+    }
+
+
+    &__subtitle{
+        color: $primary-color;
+        font-weight: lighter;
+        margin: $spacing 0;
+        font-size: 30px;
+    }
+
+    &__copy{
+        color: $tertiary-color;
+        font-weight: lighter;
+
+    }
+
+    &__footer{
+        padding: $spacing;
+        @include flexible;
+    }
+
+    &__button{
+        color: $primary-color;
+        background-color: $secondary-color;
+        border: 1px solid $primary-color;
+        padding: 15px;
+        font-size: 14px;
+
+        &:hover{
+           background-color: $primary-color;
+           color: $secondary-color; 
+        }
+    }
+
+    &--reverse{
+        background-color: $primary-color;
+        .card__title, .card__subtitle{
+            color: $secondary-color;
+        }
+
+        .card__button{
+            color: $secondary-color;
+            background-color: $primary-color;
+            border: 1px solid $secondary-color;
+
+
+            &:hover{
+                background-color: $secondary-color;
+                color: $primary-color; 
+             }
+        }
+    }
+}
